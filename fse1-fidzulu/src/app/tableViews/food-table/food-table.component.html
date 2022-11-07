@@ -1,0 +1,14 @@
+<table class="zulu-table mAuto foodTable">
+  <thead>
+    <th *ngFor="let head of headers">{{ head }}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let food of food">
+      <td class="symbol">{{ food.name }}</td>
+      <td class="currentVolume">{{ food.brand }}</td>
+      <td class="market">{{ food.weight }}</td>
+      <td class="market">{{ food.calories }}</td>
+      <td class="lastPrice">{{ food.price | currency }}</td>
+    </tr>
+  </tbody>
+</table>

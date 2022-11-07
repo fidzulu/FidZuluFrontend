@@ -1,0 +1,13 @@
+<table class="zulu-table mAuto toyTable">
+  <thead>
+    <th *ngFor="let head of headers">{{ head }}</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let toy of toys">
+      <td class="symbol">{{ toy.name }}</td>
+      <td class="currentVolume">{{ toy.brand }}</td>
+      <td class="market">{{ toy.ageGroup }}</td>
+      <td class="lastPrice">{{ toy.prize | currency }}</td>
+    </tr>
+  </tbody>
+</table>

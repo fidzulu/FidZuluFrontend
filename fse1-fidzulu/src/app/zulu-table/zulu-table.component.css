@@ -1,0 +1,23 @@
+.priceChange, .lastPrice {
+    font-weight: bold;
+}
+
+.positive {
+    color: green;
+}
+
+.negative {
+    color: red;
+}
+
+.squeezed {
+    justify-content: center;
+}
+
+.ma2 {
+    margin: auto 2em;
+}
+
+.block {
+    display: block !important;
+}

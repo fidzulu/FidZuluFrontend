@@ -1,0 +1,23 @@
+header {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+footer {
+  margin-top: auto;
+  text-align: center;
+  width: 100%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  height: 81vh;
+  margin: 0;
+}
+
+.bold {
+  font-weight: bold;
+  margin: 0;
+}

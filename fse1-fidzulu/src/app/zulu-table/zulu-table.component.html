@@ -1,0 +1,53 @@
+<div class="list-wrapper">
+  <!-- Buttons for what location to filter by -->
+  <div class="level squeezed">
+    <button
+      *ngFor="let btn of locationButtons"
+      class="m1em"
+      [class.reverseFill]="!btn.selected"
+      (click)="btn.run(); refreshView(); setSelectedLocation(btn)"
+    >
+      {{ btn.label }}
+    </button>
+  </div>
+  <nav class="">
+    <!-- Buttons for what data to receive -->
+    <div class="level services">
+      <button
+        *ngFor="let btn of dataButtons"
+        class="class{{ btn.style }}"
+        [class.reverseFill]="!btn.selected"
+        (click)="btn.run(); setSelectedDataBtn(btn)"
+      >
+        {{ btn.label }}
+      </button>
+    </div>
+  </nav>
+
+  <hr />
+
+  <!-- Table -->
+  <section class="">
+    <div class="block" [ngSwitch]="currentDataType">
+      <!-- Switch current data type, show table based on current data type -->
+      <app-toy-table *ngSwitchCase="'Toys'" [toys]="objectList"></app-toy-table>
+      <app-bikes-table
+        *ngSwitchCase="'Bikes'"
+        [bikes]="objectList"
+      ></app-bikes-table>
+      <app-food-table
+        *ngSwitchCase="'Food'"
+        [food]="objectList"
+      ></app-food-table>
+      <div class="center" *ngSwitchDefault>
+        <!-- Error message -->
+        <h4>Nothing Found for Data Type: {{ currentDataType }}</h4>
+      </div>
+    </div>
+    <!-- List of team members -->
+    <div class="center">
+      <h4>{{ currentDataType }} Data brought by:</h4>
+      <p>{{ dataTeamMembers }}</p>
+    </div>
+  </section>
+</div>

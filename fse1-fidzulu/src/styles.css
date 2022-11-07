@@ -1,1 +1,184 @@
 /* You can add global styles to this file, and also import other style files */
+html {
+  font-family: 'Roboto', sans-serif;
+  background: #f3f3f3;
+}
+
+h1 { margin-bottom: 0; }
+hr { margin-bottom: 1rem; }
+.w100 { width: 100%; }
+.m0 { margin: 0; }
+
+.mAuto {
+  margin: auto;
+}
+
+.m1em {
+  margin: 1em;
+}
+
+table {
+  font-family: 'Roboto', sans-serif;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  width: 90%;
+  color: #000;
+}
+
+.center {
+  margin: 0;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+thead {
+  border-radius: 4px;
+  background: darkgreen;
+  font-weight: bold;
+  color: #fff;
+}
+
+th {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  padding: .5rem;
+}
+
+th:first-child {
+  border-top-left-radius: 4px;
+}
+
+th:last-child {
+  border-top-right-radius: 4px;
+}
+
+tr:nth-child(even) {
+  background: #ebebeb;
+}
+
+tr:nth-child(odd) {
+  background: #fefefe;
+}
+
+tr:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+tr:last-child td:first-child { border-bottom-left-radius: 4px; }
+tr:last-child td:last-child { border-bottom-right-radius: 4px; }
+
+td {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  padding: .5rem;
+  text-align: center;
+}
+
+nav {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.level {
+  align-items: center;
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+button {
+  font-family: 'Roboto', sans-serif;
+  padding: .5rem 1rem;
+  background: darkgreen;
+  color: #fff;
+  border-radius: 8px;
+  border: seagreen 1px solid;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f3f3f3;
+  color: #000;
+}
+
+button:active {
+  border: seagreen solid 2px;
+}
+
+button.reverseFill {
+  font-family: 'Roboto', sans-serif;
+  padding: .5rem 1rem;
+  background: #f3f3f3;
+  color: #000;
+  border-radius: 8px;
+  border: seagreen 1px solid;
+  cursor: pointer;
+}
+
+button.reverseFill:hover {
+  background: seagreen;
+  color: #fff;
+}
+
+button.reverseFill:active {
+  background: darkgreen;
+  border: lightgreen solid 2px;
+}
+
+
+
+
+
+
+
+
+
+ /* Class B button */
+button.classB {
+  font-family: 'Roboto', sans-serif;
+  padding: .5rem 1rem;
+  background: #c18e3d;
+  color: #fff;
+  border-radius: 8px;
+  border: #d1aa6d 1px solid;
+  cursor: pointer;
+}
+
+button.classB:hover {
+  background: #f3f3f3;
+  color: #000;
+}
+
+button.classB:active {
+  border: #c18e3d solid 2px;
+}
+
+button.classB.reverseFill {
+  font-family: 'Roboto', sans-serif;
+  padding: .5rem 1rem;
+  background: #f3f3f3;
+  color: #000;
+  border-radius: 8px;
+  border: #c18e3d 1px solid;
+  cursor: pointer;
+}
+
+button.classB.reverseFill:hover {
+  background: #c18e3d;
+  color: #fff;
+}
+
+button.classB.reverseFill:active {
+  background: #d1aa6d;
+  border: #c18e3d solid 2px;
+}
