@@ -1,4 +1,4 @@
-header {
+/* header {
   text-align: center;
   width: 100%;
   margin-bottom: 2%;
@@ -20,4 +20,15 @@ main {
 .bold {
   font-weight: bold;
   margin: 0;
+} */
+
+.c-item {
+  height: 500px;
+}
+
+.c-img {
+  height: 100%;
+  width: 100%;
+  object-fit:cover;
+  filter: brightness(0.7);
 }

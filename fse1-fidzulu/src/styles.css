@@ -1,5 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
-html {
+/* html {
   font-family: 'Roboto', sans-serif;
   background: #f3f3f3;
 }
@@ -140,11 +140,11 @@ button.reverseFill:active {
 
 
 
-
+ */
 
 
  /* Class B button */
-button.classB {
+/* button.classB {
   font-family: 'Roboto', sans-serif;
   padding: .5rem 1rem;
   background: #c18e3d;
@@ -181,4 +181,4 @@ button.classB.reverseFill:hover {
 button.classB.reverseFill:active {
   background: #d1aa6d;
   border: #c18e3d solid 2px;
-}
+} */

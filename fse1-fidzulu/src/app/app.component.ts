@@ -11,9 +11,10 @@ export class AppComponent {
     new Date().getMonth() + 1
   }/${new Date().getDate()}/${new Date().getFullYear()}`;
   readonly frontendTeam: String[] = [
-    ' Arion Askins',
-    ' Mohamed Gueye',
-    ' Saivion Hayes',
-    ' Thomas Babic',
+    ' Akilandeshwari R',
+    ' Pavithra B',
+    ' Rakshitha M',
+    ' Sasmithaa V S',
+    ' Sushmitha B R'
   ];
 }

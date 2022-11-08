@@ -1,17 +1,237 @@
-<div class="app-wrap">
-  <header>
-    <h1>{{ title }}</h1>
-  </header>
-  <main>
-    <app-zulu-table></app-zulu-table>
-  </main>
-  <footer>
-    <!-- List of Frontend members -->
-    <div class="center">
-      <h4 class="m0">Frontend brought by:</h4>
-      <p class="m0">{{ frontendTeam }}</p>
+<main>
+  <nav class="px-sm-5 navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+    <div class="px-sm-5 container-fluid">
+      <a class="navbar-brand" href="#"><h3 class="my-0">FidZulu</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Bikes</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Books</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">DVDs</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Food</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Laptops</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Toys</a></li>
+  
+            </ul>
+          </li>
+        </ul>
+        
+        <form class="d-flex" role="radio">
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
+            <label class="form-check-label text-light" for="inlineRadio1">Raleigh</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+            <label class="form-check-label text-light" for="inlineRadio2">Durham</label>
+          </div>
+        </form>
+      </div>
     </div>
-    <hr />
-    <p class="bold">Copyright &copy; Fidelity {{ currDate }}</p>
-  </footer>
-</div>
+  </nav>
+  <div id="hero-carousel" class="carousel slide pt-5" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="6" aria-label="Slide 6"></button>
+    </div>
+
+    <div class="carousel-inner">
+      <div class="carousel-item active c-item">
+        <img src="\assets\images\bike.jpg" class="d-block c-img" alt="Slide 1">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="mt-5 fs-3 text-uppercase">Enjoy your Freedom on two wheels</p>
+          <h1 class="display-1 fw-bolder text-capitalize">Bikes</h1>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5">Visit bike store</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="\assets\images\food.jpg" class="d-block w-100 c-img" alt="Slide 2">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Giving your Hunger a new Option</p>
+          <p class="display-1 fw-bolder text-capitalize">Food</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Visit food store</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="\assets\images\books.jpg" class="d-block w-100 c-img" alt="Slide 3">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Inspiration for every age</p>
+          <p class="display-1 fw-bolder text-capitalize">Books</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Visit book store</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="\assets\images\toys.jpg" class="d-block w-100 c-img" alt="Slide 4">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Your Toy, Your Passion. Pick the best!</p>
+          <p class="display-1 fw-bolder text-capitalize">Toys</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Visit toy store</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="\assets\images\laptop.jpg" class="d-block w-100 c-img" alt="Slide 5">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Designed with precision. Loaded with features. Made affordable for you</p>
+          <p class="display-1 fw-bolder text-capitalize">Laptops</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Visit laptop store</button>
+        </div>
+      </div>
+      <div class="carousel-item c-item">
+        <img src="\assets\images\DVDs.jpg" class="d-block w-100 c-img" alt="Slide 6">
+        <div class="carousel-caption top-0 mt-4">
+          <p class="text-uppercase fs-3 mt-5">Rewind the happiness</p>
+          <p class="display-1 fw-bolder text-capitalize">DVDs</p>
+          <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal"
+            data-bs-target="#booking-modal">Visit DVD store</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#hero-carousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#hero-carousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="px-sm-5 py-5 container-fluid"> 
+    <div class="px-5">
+      <div class="fs-1 mb-4">Categories</div>
+      <div class="row">
+        <div class="row hidden-md-up gx-5 justify-content-md-center">
+          <div class="col-md-4 mb-4 mb-sm-5 mb-4 mb-sm-5">
+            <div class="card">
+              <img src="\assets\images\bike.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Bikes</h5>
+                <a href="#" class="text-decoration-none">See more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-sm-5">
+            <div class="card">
+              <img src="\assets\images\orderfood.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Food</h5>
+                <a href="#" class="text-decoration-none">See more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-sm-5">
+            <div class="card">
+              <img src="\assets\images\orderbook.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Books</h5>
+                <a href="#" class="text-decoration-none">See more...</a>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row hidden-md-up pb-md-5 gx-5 justify-content-md-center">
+          <div class="col-md-4 mb-4 mb-sm-5">
+            <div class="card">
+              <img src="\assets\images\ordertoy.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Toys</h5>
+                <a href="#" class="text-decoration-none">See more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-sm-5">
+            <div class="card">
+              <img src="\assets\images\orderlaptop1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Laptops</h5>
+                <a href="#" class="text-decoration-none">See more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-sm-5">
+            <div class="card">
+              <img src="\assets\images\orderDvD.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">DVDs</h5>
+                <a href="#" class="text-decoration-none">See more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light text-muted pt-5">
+      <section class="">
+        <div class="container text-center text-md-start">
+          <div class="row text-light text-decoration-none">
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <h6 class="fs-3 fw-bold mb-4">
+                FidZulu
+              </h6>
+              <p>
+                Selling only the best things online
+              </p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                FrontEnd Team
+              </h6>
+              <p>Akilandeshwari R</p>
+              <p>Pavithra B</p>
+              <p>Rakshitha M</p>
+              <p>Sasmithaa V S</p>
+              <p>Sushmitha B R</p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">
+                Midtier team
+              </h6>
+              
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <h6 class="text-uppercase fw-bold mb-4">Backend Team</h6>
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="text-center text-light p-4">
+        <hr>
+        © 2022 Copyright:
+        <a class="text-reset text-decoration-none fw-bold" href="#">Fidelity FSE1-FidZulu</a>
+      </div>
+    </footer>
+  </div>
+</main>
+
+
+
