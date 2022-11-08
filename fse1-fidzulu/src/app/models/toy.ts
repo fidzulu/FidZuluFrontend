@@ -1,8 +1,8 @@
 export class Toy {
   constructor(
-    public name: string,
-    public brand: string,
-    public ageGroup: string,
+    public name: String,
+    public brand: String,
+    public ageGroup: String,
     public prize: number
   ) {}
 }

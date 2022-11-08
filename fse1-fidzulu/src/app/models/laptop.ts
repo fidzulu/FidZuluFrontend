@@ -3,7 +3,7 @@ export class Laptop {
         public product: String,
         public brand: String,
         public CPU: String,
-        public memory: number,
+        public memory: String,
         public price: number,
     ) { }
 
