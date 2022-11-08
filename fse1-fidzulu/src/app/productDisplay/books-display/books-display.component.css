@@ -1,0 +1,33 @@
+.content {
+  width: 65rem;
+  margin: 1rem auto;
+  margin-top: 8rem;
+  /* border: 1px solid red; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  padding-left: 1rem;
+}
+
+.cards {
+  width: 18rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  cursor: pointer;
+  background-color: rgb(247, 247, 247);
+}
+
+.color {
+  width: 2.5rem;
+  height: 2.5rem;
+
+}
+
+.isbn-display{
+  display: flex;
+  width: 100%;
+}
+
+.isbn-display h6{
+  margin-right: 1rem;
+  font-size: 14px;
+}
