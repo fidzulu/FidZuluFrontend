@@ -14,6 +14,11 @@ import {MatCardModule} from '@angular/material/card';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { BikesDisplayComponent } from './productDisplay/bikes-display/bikes-display.component';
+import { BooksDisplayComponent } from './productDisplay/books-display/books-display.component';
+import { DvdDisplayComponent } from './productDisplay/dvd-display/dvd-display.component';
+import { FoodDisplayComponent } from './productDisplay/food-display/food-display.component';
+import { LaptopDisplayComponent } from './productDisplay/laptop-display/laptop-display.component';
+import { ToyDisplayComponent } from './productDisplay/toy-display/toy-display.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +27,12 @@ import { BikesDisplayComponent } from './productDisplay/bikes-display/bikes-disp
     ToyTableComponent,
     FoodTableComponent,
     BikesTableComponent,
-    BikesDisplayComponent
+    BikesDisplayComponent,
+    BooksDisplayComponent,
+    DvdDisplayComponent,
+    FoodDisplayComponent,
+    LaptopDisplayComponent,
+    ToyDisplayComponent
   ],
   imports: [
     BrowserModule,

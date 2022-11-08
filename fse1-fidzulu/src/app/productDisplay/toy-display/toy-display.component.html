@@ -1,0 +1,8 @@
+<div class="content"  >
+  <mat-card  class="cards" *ngFor="let toy of toys" >
+    <mat-card-title class="title" style="font-size: 20px;">{{toy.name}}</mat-card-title>
+    <h6 style="font-size: 12px;" >{{toy.brand}}</h6>
+    <h5  style="color: rgb(107, 107, 107);font-size: 14px;">{{toy.ageGroup}}</h5>
+    <h4 style="color: rgb(0, 150, 0);"><span matPrefix>$&nbsp;</span>{{toy.prize}}</h4>
+  </mat-card>
+</div>
