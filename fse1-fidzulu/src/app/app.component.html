@@ -15,7 +15,7 @@
               Categories
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Bikes</a></li>
+              <li><a class="dropdown-item" routerLink="/bikes">Bikes</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Books</a></li>
               <li><hr class="dropdown-divider"></li>
@@ -26,11 +26,11 @@
               <li><a class="dropdown-item" href="#">Laptops</a></li>
               <li><hr class="dropdown-divider"></li>
               <li><a class="dropdown-item" href="#">Toys</a></li>
-  
+
             </ul>
           </li>
         </ul>
-        
+
         <form class="d-flex" role="radio">
           <div class="form-check form-check-inline">
             <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" checked>
@@ -44,6 +44,7 @@
       </div>
     </div>
   </nav>
+  <router-outlet></router-outlet>
   <div id="hero-carousel" class="carousel slide pt-5" data-bs-ride="carousel">
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#hero-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -118,7 +119,7 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
-  <div class="px-sm-5 py-5 container-fluid"> 
+  <div class="px-sm-5 py-5 container-fluid">
     <div class="px-5">
       <div class="fs-1 mb-4">Categories</div>
       <div class="row">
@@ -214,7 +215,7 @@
               <h6 class="text-uppercase fw-bold mb-4">
                 Midtier team
               </h6>
-              
+
             </div>
 
             <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
