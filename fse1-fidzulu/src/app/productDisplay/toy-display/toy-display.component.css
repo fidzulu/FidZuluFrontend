@@ -1,7 +1,7 @@
 .content {
   width: 65rem;
   margin: 1rem auto;
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   /* border: 1px solid red; */
   display: grid;
   grid-template-columns: repeat(3, 1fr);

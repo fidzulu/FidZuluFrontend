@@ -1,4 +1,7 @@
-<div class="content"  >
+<div class="py-5 fs-2 text-center">
+  <div class="pt-5">Bikes</div>
+</div>
+<div class="content">
     <mat-card  class="cards" *ngFor="let bike of bikes" >
       <mat-card-title class="title" style="font-size: 18px;">{{bike.name}}</mat-card-title>
       <mat-card-subtitle class="brand">{{bike.brand}}</mat-card-subtitle>
@@ -8,7 +11,6 @@
         <div style.backgroundColor = "{{bike.color}}" class="color"
         matTooltip={{bike.color}}></div>
       </div>
-
     </mat-card>
 </div>
 
