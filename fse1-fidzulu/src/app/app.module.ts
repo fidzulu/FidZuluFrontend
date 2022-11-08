@@ -10,11 +10,10 @@ import { ToyTableComponent } from './tableViews/toy-table/toy-table.component';
 import { FoodTableComponent } from './tableViews/food-table/food-table.component';
 import { BikesTableComponent } from './tableViews/bikes-table/bikes-table.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatCardModule} from '@angular/material/card';
-import { MatPaginatorModule} from '@angular/material/paginator';
-import {MatTooltipModule} from '@angular/material/tooltip';
+import { MatCardModule } from '@angular/material/card';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { BikesDisplayComponent } from './productDisplay/bikes-display/bikes-display.component';
-import { MainPageComponent } from './main-page/main-page.component';
 import { BooksDisplayComponent } from './productDisplay/books-display/books-display.component';
 import { DvdDisplayComponent } from './productDisplay/dvd-display/dvd-display.component';
 import { FoodDisplayComponent } from './productDisplay/food-display/food-display.component';
@@ -29,7 +28,6 @@ import { ToyDisplayComponent } from './productDisplay/toy-display/toy-display.co
     FoodTableComponent,
     BikesTableComponent,
     BikesDisplayComponent,
-    MainPageComponent,
     BooksDisplayComponent,
     DvdDisplayComponent,
     FoodDisplayComponent,
@@ -46,7 +44,7 @@ import { ToyDisplayComponent } from './productDisplay/toy-display/toy-display.co
     MatPaginatorModule,
     MatTooltipModule
   ],
-  providers: [],
+  providers: [AppComponent, BikesDisplayComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
