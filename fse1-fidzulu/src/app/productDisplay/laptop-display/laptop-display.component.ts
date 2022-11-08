@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Laptop } from 'src/app/models/laptop';
+import { LaptopService } from 'src/app/service/laptop.service';
 
 @Component({
   selector: 'app-laptop-display',
@@ -8,38 +9,21 @@ import { Laptop } from 'src/app/models/laptop';
 })
 export class LaptopDisplayComponent implements OnInit {
   laptops:Laptop[] = [
-    {
-      "product": "ThinkPad T430s",
-      "brand": "Lenovo",
-      "CPU": "core i5-3320",
-      "memory": "8GB",
-      "price": 325.09
-    },
-    {
-      "product": "MacBook Air",
-      "brand": "Apple",
-      "CPU": "core i5 1.6GHz",
-      "memory": "4GB",
-      "price": 621.78
-    },
-    {
-      "product": "Ideapad 330",
-      "brand": "Lenovo",
-      "CPU": "core i3-8130U",
-      "memory": "4GB",
-      "price": 459.98
-    },
-    {
-      "product": "MacBook Pro",
-      "brand": "Apple",
-      "CPU": "core i5 2.5GHz",
-      "memory": "4GB",
-      "price": 2999.99
-    }]
+    ]
 
-  constructor() { }
+  constructor(private lapSer: LaptopService) { }
 
   ngOnInit(): void {
+    this.getData('Durham');
   }
+
+  getData(val:string) {
+    
+    this.lapSer.getAllBikes(val).subscribe(data=>{
+      console.log(data);
+      this.laptops = data
+    });
+
+}
 
 }

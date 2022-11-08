@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from 'src/app/models/book';
+import { BookService } from 'src/app/service/book.service';
 
 @Component({
   selector: 'app-books-display',
@@ -7,39 +8,20 @@ import { Book } from 'src/app/models/book';
   styleUrls: ['./books-display.component.css']
 })
 export class BooksDisplayComponent implements OnInit {
-  books:Book[] = [{
-    "Title": "Lord of the Rings",
-    "Author": "J.R.R Tolkien",
-    "price": 25.99,
-    "ISBN": "9780261102385",
-    "publisher": "HarperCollins"
-  },
-  {
-    "Title": "The Hobbit",
-    "Author": "J.R.R Tolkien",
-    "price": 9.88,
-    "ISBN": "0261102214",
-    "publisher": "HarperCollins"
-  },
-  {
-    "Title": "Lord of Souls",
-    "Author": "Greg Keyes",
-    "price": 12.98,
-    "ISBN": "0345508025",
-    "publisher": "Del Rey"
-  },
-  {
-    "Title": "Chronicles of Narnia",
-    "Author": "C. S. Lewis",
-    "price": 41.77,
-    "ISBN": "0064471195",
-    "publisher": "HarperCollins"
-  }]
+  books:Book[] = []
 
-  constructor() { }
+  constructor(private ervice: BookService) { }
   ngOnInit(): void {
+    this.getData('Durham');
 
   }
+
+  getData(val:string) {
+    
+    this.ervice.getAllBikes(val).subscribe(data=>{
+      console.log(data);
+      this.books = data
+    });}
 
 
 }

@@ -19,6 +19,7 @@ import { DvdDisplayComponent } from './productDisplay/dvd-display/dvd-display.co
 import { FoodDisplayComponent } from './productDisplay/food-display/food-display.component';
 import { LaptopDisplayComponent } from './productDisplay/laptop-display/laptop-display.component';
 import { ToyDisplayComponent } from './productDisplay/toy-display/toy-display.component';
+import { Book } from './models/book';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ToyDisplayComponent } from './productDisplay/toy-display/toy-display.co
     MatPaginatorModule,
     MatTooltipModule
   ],
-  providers: [AppComponent, BikesDisplayComponent],
+  providers: [AppComponent, BikesDisplayComponent, ToyDisplayComponent,LaptopDisplayComponent,
+  BooksDisplayComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
