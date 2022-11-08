@@ -22,13 +22,3 @@ main {
   margin: 0;
 } */
 
-.c-item {
-  height: 500px;
-}
-
-.c-img {
-  height: 100%;
-  width: 100%;
-  object-fit:cover;
-  filter: brightness(0.7);
-}

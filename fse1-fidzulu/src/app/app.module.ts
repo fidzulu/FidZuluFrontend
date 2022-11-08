@@ -14,6 +14,7 @@ import {MatCardModule} from '@angular/material/card';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import {MatTooltipModule} from '@angular/material/tooltip';
 import { BikesDisplayComponent } from './productDisplay/bikes-display/bikes-display.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { BikesDisplayComponent } from './productDisplay/bikes-display/bikes-disp
     ToyTableComponent,
     FoodTableComponent,
     BikesTableComponent,
-    BikesDisplayComponent
+    BikesDisplayComponent,
+    MainPageComponent
   ],
   imports: [
     BrowserModule,
