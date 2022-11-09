@@ -46,6 +46,7 @@ import { Book } from './models/book';
     MatTooltipModule
   ],
   providers: [AppComponent, BikesDisplayComponent, ToyDisplayComponent,LaptopDisplayComponent,
+    DvdDisplayComponent, FoodDisplayComponent,
   BooksDisplayComponent],
   bootstrap: [AppComponent]
 })
