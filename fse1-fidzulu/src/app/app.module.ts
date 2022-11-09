@@ -20,6 +20,7 @@ import { FoodDisplayComponent } from './productDisplay/food-display/food-display
 import { LaptopDisplayComponent } from './productDisplay/laptop-display/laptop-display.component';
 import { ToyDisplayComponent } from './productDisplay/toy-display/toy-display.component';
 import { Book } from './models/book';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [

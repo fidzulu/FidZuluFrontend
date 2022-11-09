@@ -8,4 +8,8 @@
     object-fit:cover;
     filter: brightness(0.7);
 }
+
+a {
+    cursor: pointer;
+}
   
